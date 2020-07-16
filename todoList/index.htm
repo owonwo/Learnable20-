@@ -2,36 +2,50 @@
 <html lang="en">
 
 <head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
- <link rel="stylesheet" href="./style.css">
- <title>Todo List</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i|Nunito:300,300i" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <title>Todo List</title>
 </head>
 
 <body>
- <div class="container">
-  <h1>To Do List</h1>
-  <form class="todo-form">
-   <input type="text" id="todo-input" placeholder="Name...">
-   <input type="submit" class="btn btn-add" value="Add Item">
-  </form>
+  <div class="container">
+    <h1>To Do List</h1>
+    <form class="todo-form">
+      <input type="text" id="todo-input" placeholder="Name...">
+      <input type="button" class="btn btn-add" value="Add Item" id="theButton">
+    </form>
 
-  <ul class="todo-list">
-   <li>
-    Finish My Javascript Assignment Before Going Home
-    <span><i class="fa fa-check-circle" aria-hidden="false"></i></span>
-   </li>
-   <li>Be Free To Ask Questions From Anyone Who Is Capable</li>
-   <li>Make Sure I Attempt Everything My Self</li>
-   <li>Challenge My Self Not To copy Copy</li>
-  </ul>
+    <ul class="todo-list" id="todo-list">
+      <li>
+        Finish My Javascript Assignment Before Going Home
+        <span class="icon-position">
+          <svg class="icon">
+            <use xlink:href="./icon/sprite.svg#icon-checkbox-checked"></use>
+          </svg>
+        </span>
+        <span class="icon-position"> 
+          <svg class="icon">
+            <use xlink:href="./icon/sprite.svg#icon-pencil"></use>
+          </svg>
+        </span>
+        <span class="icon-position">
+          <svg class="icon">
+            <use xlink:href="./icon/sprite.svg#icon-bin"></use>
+          </svg>
+        </span>
+      </li>
+      <li>Be Free To Ask Questions From Anyone Who Is Capable</li>
+      <li>Make Sure I Attempt Everything My Self</li>
+      <li>Challenge My Self Not To copy Copy</li>
+    </ul>
 
-  <div id="btn-position">
-   <button class="btn btn-clear">Clear Items</button>
+    <div id="btn-position">
+      <button class="btn btn-clear">Clear Items</button>
+    </div>
   </div>
- </div>
- <script src="./script.js"></script>
+  <script src="./script.js"></script>
 </body>
 
 </html>
