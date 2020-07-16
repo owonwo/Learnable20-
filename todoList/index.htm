@@ -4,21 +4,30 @@
 <head>
  <meta charset="UTF-8">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
  <link rel="stylesheet" href="./style.css">
  <title>Todo List</title>
 </head>
 
 <body>
- <div id="container">
+ <div class="container">
   <h1>To Do List</h1>
-  <input type="text" placeholder="Name...">
+  <form class="todo-form">
+   <input type="text" id="todo-input" placeholder="Name...">
+   <input type="submit" class="btn btn-add" value="Add Item">
+  </form>
 
-  <ul>
-   <li>Finish My Javascript Assignment</li>
-   <li>Make Sure I Attempt everything My Self</li>
+  <ul class="todoList">
+   <li>
+    Finish My Javascript Assignment Before Going Home <i class="fa fa-check-circle" aria-hidden="false"></i></li>
+   <li>Be Free To Ask Questions From Anyone Who Is Capable</li>
+   <li>Make Sure I Attempt Everything My Self</li>
    <li>Challenge My Self Not To copy Copy</li>
-   <li>Be Free To Ask Questions From Fellow Classmates</li>
   </ul>
+
+  <div id="btn-position">
+   <button class="btn btn-clear">Clear Items</button>
+  </div>
  </div>
  <script src="./script.js"></script>
 </body>

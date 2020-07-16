@@ -1,9 +1,43 @@
-body {
+/* General styles */
+* {
+ margin: 0;
+ padding: 0;
  box-sizing: border-box;
 }
 
-#container {
- width: 100vh;
- margin: 0 auto;
- border: 2px solid gray;
+.container {
+ width: 55em;
+ height: 20em;
+  margin: 100px auto;
+ background-color: #f7f7f7;
+}
+
+h1 {
+ text-align: center;
+ padding-bottom: 10px;
+}
+
+#todo-input {
+ width: 55em;
+ padding: 10px;
+}
+
+.btn {
+ height: 2.5rem;
+ width: 5rem;
+ cursor: pointer;
+}
+
+.todoList {
+ margin-top: 1rem;
+}
+
+ul li {
+ list-style-type: none;
+ line-height: 2rem;
+}
+
+#btn-position {
+ text-align: center;
+ margin-top: 1.5rem;
 }
